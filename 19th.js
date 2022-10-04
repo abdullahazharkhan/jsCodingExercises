@@ -1,0 +1,8 @@
+let persons = ["huzaifa", "samar", "hania", "umar"];
+
+console.log("come to dinner, "+ persons[0]);
+console.log("come to dinner, "+ persons[1]);
+console.log("come to dinner, "+ persons[2]);
+console.log("come to dinner, "+ persons[3]);
+
+console.log("I am inviting "+persons.length+" persons");
