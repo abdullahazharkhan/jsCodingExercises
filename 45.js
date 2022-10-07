@@ -1,17 +1,9 @@
-function car(...args){
-    return args.reduce(function (manufacturer, model) {
-        const details ={
-            manufacturer: manufacturer,
-            model: model
-        }
-        console.log("Manufacturer: "+ details.manufacturer);
-    console.log("Model: "+ details.model);
-    console.log("other features: ");
-    console.log(args);
-      })
-    
-    
-    
+function car(manufacturer, model, ...others){
+    if(others.length == 0){
+        console.log("manufacturer: " + manufacturer + " model: " + model);
+    } else {
+        console.log("manufacturer: " + manufacturer + " model: " + model + " other features: " + others);
+    }
 }
 
-car("suzuku", 1992);
+car("suzuki", 1992, "red");
